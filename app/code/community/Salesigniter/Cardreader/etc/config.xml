@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Salesigniter_Cardreader>
+            <version>0.1</version>
+        </Salesigniter_Cardreader>
+    </modules>
+    <adminhtml>
+        <layout>
+            <updates>
+                <salesigniter_cardreader>
+                    <file>cardreader.xml</file>
+                </salesigniter_cardreader>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

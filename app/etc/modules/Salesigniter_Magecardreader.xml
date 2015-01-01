@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Salesigniter_Cardreader>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Salesigniter_Cardreader>
+    </modules>
+</config>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_sales_order_create_index>
+        <reference name="head">
+            <action method="addJs">
+                <script>cardreader/jquery-1.11.2.js</script>
+            </action>
+            <!--<action method="addJs">-->
+                <!--<script>itwebexperts_payperrentals/jquery/jquery.noconflict.js</script>-->
+            <!--</action>-->
+            <action method="addJs">
+                <script>cardreader/jquery.cardswipe.js</script>
+            </action>
+            <action method="addJs">
+                <script>cardreader/mage.cardswipe.js</script>
+            </action>
+        </reference>
+    </adminhtml_sales_order_create_index>
+</layout>
