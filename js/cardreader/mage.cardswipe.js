@@ -1,8 +1,57 @@
 (function ($){
 
+    /**
+     * If exp month starts with 0, slice it
+     * adds 20 to beginning of year
+     * for comparability with magento style month/year drop downs
+     *
+     * @param data
+     * @returns {*}
+     */
     var convertDataToMagento = function(data){
-        data.expMonth
+        if(data.expMonth.charAt(0) == "0"){
+            data.expMonth = data.expMonth.slice(1);
+        }
+        data.expYear = "20" + data.expYear;
+        switch (data.type){
+            case "visa":
+                data.type = "VI";
+                break;
+            case "mastercard":
+                data.type = "MC";
+                break;
+            case "amex":
+                data.type = "AE";
+                break;
+            case "discover":
+                data.type = "DI";
+                break;
+        }
+        return data;
     }
+
+    //builtinParsers.discover = function(rawData){
+    //    // Discover starts with 6, is 16 digits
+    //    var pattern = new RegExp("^%B(6[0-9]{15})\\^([A-Z ]+)/([A-Z ]+)\\^([0-9]{2})([0-9]{2})");
+    //
+    //    var match = pattern.exec(rawData);
+    //    if (!match) return null;
+    //
+    //    var account = match[1];
+    //    if (!luhnCheck(account))
+    //        return null;
+    //
+    //    var cardData = {
+    //        type: "discover",
+    //        account: account,
+    //        lastName: match[2].trim(),
+    //        firstName: match[3].trim(),
+    //        expYear: match[4],
+    //        expMonth: match[5]
+    //    };
+    //
+    //    return cardData;
+    //};
 
 // Called by plugin on a successful scan.
 var complete = function (data) {
@@ -64,7 +113,7 @@ var failure = function () {
 $.cardswipe({
     firstLineOnly: true,
     complete: complete,
-    parsers: ["visa", "amex", "mastercard", "generic"],
+    parsers: ["visa", "amex", "mastercard", "discover", "generic"],
     debug: false
 });
 

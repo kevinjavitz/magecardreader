@@ -132,6 +132,28 @@
 
 			return cardData;
 		},
+
+		discover: function(rawData) {
+			// Discover starts with 6, is 16 digits
+			var pattern = new RegExp("^%B(6[0-9]{15})\\^([A-Z ]+)/([A-Z ]+)\\^([0-9]{2})([0-9]{2})");
+
+			var match = pattern.exec(rawData);
+			if (!match) return null;
+
+			var account = match[1];
+			if (!luhnCheck(account))
+				return null;
+
+			var cardData = {
+				type: "discover",
+				account: account,
+				lastName: match[2].trim(),
+				firstName: match[3].trim(),
+				expYear: match[4],
+				expMonth: match[5]
+			};
+			return cardData;
+		}
 	};
 
 
