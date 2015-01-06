@@ -1,5 +1,4 @@
 app/etc/modules/Salesigniter_Magecardreader.xml
 app/code/community/Salesigniter/Cardreader app/code/community/Salesigniter/Cardreader
 app/design/adminhtml/default/default/layout/cardreader.xml app/design/adminhtml/default/default/layout/cardreader.xml
-app/design/adminhtml/default/default/template/cardreader app/design/adminhtml/default/default/template/cardreader
 js/cardreader js/cardreader
