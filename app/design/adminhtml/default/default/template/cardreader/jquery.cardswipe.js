@@ -1,22 +1,4 @@
-﻿// A jQuery plugin to detect magnetic card swipes.  Requires a card reader that simulates a keyboard.
-// This expects a card that encodes data on track 1, though it also reads tracks 2 and 3.  Most cards
-// use track 1.  This won't recognize cards that don't use track 1, or work with a reader that
-// doesn't read track 1.
-//
-// See http://en.wikipedia.org/wiki/Magnetic_card to understand the format of the data on a card.
-//
-// Uses pattern at https://github.com/umdjs/umd/blob/master/jqueryPlugin.js to declare
-// the plugin so that it works with or without an AMD-compatible module loader, like RequireJS.
-//(function (factory) {
-//	if (typeof define === 'function' && define.amd) {
-//		// AMD. Register as an anonymous module.
-//		define(['jquery'], factory);
-//	} else {
-//		// Browser globals
-//		factory(jQuery);
-//	}
-//}
-<script>
+﻿<script>
 (function ($) {
 
 
