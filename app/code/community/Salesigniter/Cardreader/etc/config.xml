@@ -14,4 +14,18 @@
             </updates>
         </layout>
     </adminhtml>
+    <global>
+        <helpers>
+            <cardreader>
+                <class>Salesigniter_Cardreader_Helper</class>
+            </cardreader>
+        </helpers>
+    </global>
+    <default>
+        <cardreader>
+            <settings>
+                <usejquery>1</usejquery>
+            </settings>
+        </cardreader>
+    </default>
 </config>

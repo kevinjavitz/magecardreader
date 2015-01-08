@@ -2,3 +2,5 @@ app/etc/modules/Salesigniter_Magecardreader.xml
 app/code/community/Salesigniter/Cardreader app/code/community/Salesigniter/Cardreader
 app/design/adminhtml/default/default/layout/cardreader.xml app/design/adminhtml/default/default/layout/cardreader.xml
 js/cardreader js/cardreader
+skin/adminhtml/default/default/images/sales_igniter/si_system_logo.png skin/adminhtml/default/default/images/sales_igniter/si_system_logo.png
+app/design/adminhtml/default/default/template/cardreader app/design/adminhtml/default/default/template/cardreader

@@ -1,3 +1,4 @@
+<script>
 (function ($){
 
     /**
@@ -125,3 +126,4 @@ $(document)
     .bind("failure.cardswipe", failure)
 ;
 }(jQuery));
+</script>
