@@ -7,8 +7,8 @@
             </action>
         </reference>
         <reference name="before_body_end">
-            <block type="core/template" name="cardfooter" as="cardfooter" template="cardreader/jquery.cardswipe.js" output="toHtml"/>
-            <block type="core/template" name="cardfootermage" as="cardfootermage" template="cardreader/mage.cardswipe.js" output="toHtml"/>
+            <block type="core/template" name="cardfooter" as="cardfooter" template="cardreader/jquery.cardswipe.phtml" output="toHtml"/>
+            <block type="core/template" name="cardfootermage" as="cardfootermage" template="cardreader/mage.cardswipe.phtml" output="toHtml"/>
         </reference>
     </adminhtml_sales_order_create_index>
 </layout>
